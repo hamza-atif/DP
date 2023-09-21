@@ -1,0 +1,25 @@
+Problem Statement:
+A library management system has been implemented in Java, consisting of multiple classes to represent books, 
+library users, the library itself, and a controller for managing book checkouts and check-ins.
+The system is designed to allow users to check out and return books from the library.
+However, there are several issues and limitations with the current implementation.
+
+With Grasp:
+Information Expert: Each class (Book, Library, LibraryUser, LibraryController) encapsulates its own data and relevant behavior, adhering to the Information Expert principle.
+
+Creator: The Library class is responsible for creating and managing books.
+
+Controller: The LibraryController class acts as a controller responsible for managing book checkouts and check-ins.
+
+Pure Fabrication: The LibraryUser class represents a pure fabrication as it doesn't correspond to a real-world entity but is used to demonstrate the concept.
+
+Indirection: The LibraryController class acts as an intermediary between users and the library, providing an indirect way to manage books.
+
+Protected Variation: The Library class hides the details of book management, allowing for changes in the book storage mechanism without affecting clients.
+
+Polymorphism: While not explicitly shown in this example, polymorphism can be applied when handling different types of library items (e.g., books, DVDs) under the same interface.
+This can be achieved by creating a common interface for library items and having various classes implement it.
+
+Without Grasp:
+This version of the code retains the same functionality as the previous one but simplifies the structure without explicitly adhering to the GRASP principles.
+It still models a library system with books, users, and book checkout/check-in operations.

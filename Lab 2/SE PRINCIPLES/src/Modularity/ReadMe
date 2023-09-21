@@ -1,0 +1,32 @@
+Problem Statement:
+Develop a  online shopping system in Java with well-organized classes and packages for products, carts, and users.
+Users can interact with the system by adding products to their cart and calculating the total price of the selected items.
+The goal is to demonstrate good software design practices, modularity, and organization while providing a basic online shopping experience.
+
+With Modularity:
+Features and Modules:
+
+Product Module: This module handles the creation and management of product details.
+Each product is defined by its name and price. It provides methods to set and retrieve these attributes.
+
+Cart Module: The Cart module is responsible for managing the user's shopping cart.
+It allows users to add products, remove products, and calculate the total price of the items in the cart.
+The cart maintains a list of products and their quantities.
+
+User Module: The User module represents users of the online shopping system.
+It includes user information such as a username and email address.
+This module provides methods to set and retrieve user details.
+
+Main Application : The ShoppingApp class serves as the entry point to the application.
+It demonstrates how the modules can be used together.
+Users can create products, users, and a shopping cart, add products to the cart, and calculate the total price of the items in the cart.
+Results are displayed in the console.
+
+Without Modularity:
+Every Function and method is implemented in only the main class and not any function or class is made to demonstrate the functionality.
+
+
+
+
+
+

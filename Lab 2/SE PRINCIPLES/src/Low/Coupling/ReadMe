@@ -1,0 +1,16 @@
+Problem Statement:
+Develop a Java calculator application to demonstrate the concept of low coupling in software design.
+In the high coupling example, the Main class directly depends on a specific Calculator class, creating tight coupling between the two.
+In the low coupling example, an interface (Calculator) is introduced, decoupling the Main class from the concrete calculator implementation (BasicCalculator).
+The objective is to show that low coupling promotes flexibility and maintainability by allowing for easy replacement or extension of components without affecting the core functionality of the application.
+
+With Low Coupling:
+In the improved example, we introduce an Calculator interface, which defines the methods that a calculator should have.
+The BasicCalculator class implements this interface, providing the actual calculation logic.
+The Main class now depends on the Calculator interface rather than a specific implementation.
+This allows us to easily switch between different calculator implementations without changing the Main class.
+
+Without Low Coupling:
+n this example, we have a Calculator class that directly performs arithmetic operations (addition and subtraction).
+The Main class tightly depends on the specific implementation of the Calculator class.
+Any changes to the Calculator class may require corresponding changes in the Main class, leading to high coupling.

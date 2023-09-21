@@ -1,0 +1,22 @@
+Singleton:
+A Singleton is a design pattern in software engineering that restricts the instantiation of a class to only one instance and provides a global point of access to that instance.
+In other words, it ensures that a class has only one instance and provides a way to access that instance from anywhere in your code. 
+This can be useful in situations where you want to control access to a shared resource or when exactly one object is needed to coordinate actions across the system.
+
+Problem Statement:
+you are tasked with designing a library management system for a local library.
+The library system should allow patrons to borrow and return books, check the availability of books, and manage the library's inventory.
+Two different approaches are being considered: one using the Singleton pattern, and the other without using the Singleton pattern.
+The problem statement for the library system involves designing a system that manages library resources, including books, patrons, and transactions.
+The decision to use the Singleton pattern or not depends on whether you want to ensure a single, globally accessible instance of the library system (Singleton Approach) or allow the creation of multiple independent instances (Non-Singleton Approach), each with its own set of challenges and benefits.
+
+With Singleton:
+The Book and Patron classes represent books and library patrons, respectively.
+
+The LibrarySystem class is a Singleton that manages books and patrons. It contains methods to add books and patrons, as well as retrieve lists of all books and patrons.
+
+In the main method, we demonstrate how to use the LibrarySystem Singleton to add books and patrons and retrieve and print their information.
+
+Without Singleton:
+In this version of the code, the LibrarySystem class doesn't use the Singleton pattern, so you can create multiple instances of the LibrarySystem class if needed.
+Each instance of LibrarySystem manages its own list of books and patrons independently.
