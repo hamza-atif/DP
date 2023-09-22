@@ -3,12 +3,42 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package Observers.eventmanagement;
+package observer.eventsManagement;
 
-/**
- *
- * @author fa20-bse-018
- */
-public class SMSSupportListener {
+import java.io.File;
+
+
+
+public class SMSSupportListener implements EventListener{
+    
+    private String phoneNumber;
+    
+    public SMSSupportListener(String phoneNumber) {
+       this.phoneNumber = phoneNumber;  
+    }
+    
+    
+    @Override
+//    public void update(String eventType, File file){
+    public void update(String eventType, Object file){
+       if("sms".equals(eventType)){
+//           String message = (String) file;
+            SMSData smsData = (SMSData) file;
+            String message = smsData.getMessage();
+           
+            if(message.length() > 160){
+               System.out.println("Warning: Default SMS length is too long. Please define a valid default SMS.");
+            }
+            else{
+                sendSMS(message, phoneNumber);
+            }
+        }
+    }
+    
+    private void sendSMS(String message, String phoneNumber) {
+        // Implement the logic to send an SMS here.
+        // You can use a third-party SMS gateway or any other method
+        System.out.println("Sending SMS to " + phoneNumber + ": " + message);
+    }
     
 }

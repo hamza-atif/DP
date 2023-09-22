@@ -3,10 +3,12 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package Observers.eventmanagement;
+package observer.eventsManagement;
+
 
 import java.io.File;
 
 public interface EventListener {
-    void update(String eventType, File file);
+//    void update(String eventType, File file);
+    void update(String eventType, Object file);
 }

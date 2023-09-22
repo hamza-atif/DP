@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project-private xmlns="http://www.netbeans.org/ns/project-private/1">
+    <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
+    <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
+        <group>
+            <file>file:/C:/Users/Hamza/OneDrive/Desktop/Design%20Pattern/DP/LAB%203/Decorator/src/decorator/filedecorators/UTF8Decorator.java</file>
+            <file>file:/C:/Users/Hamza/OneDrive/Desktop/Design%20Pattern/DP/LAB%203/Decorator/src/decorator/pattern/Shape.java</file>
+            <file>file:/C:/Users/Hamza/OneDrive/Desktop/Design%20Pattern/DP/LAB%203/Decorator/src/decorator/filedecorators/DataSource.java</file>
+            <file>file:/C:/Users/Hamza/OneDrive/Desktop/Design%20Pattern/DP/LAB%203/Decorator/src/decorator/filedecorators/EncryptionDecorator.java</file>
+            <file>file:/C:/Users/Hamza/OneDrive/Desktop/Design%20Pattern/DP/LAB%203/Decorator/src/decorator/filedecorators/CompressionDecorator.java</file>
+            <file>file:/C:/Users/Hamza/OneDrive/Desktop/Design%20Pattern/DP/LAB%203/Decorator/src/decorator/pattern/Rectangle.java</file>
+            <file>file:/C:/Users/Hamza/OneDrive/Desktop/Design%20Pattern/DP/LAB%203/Decorator/src/decorator/pattern/RedShapeDecorator.java</file>
+            <file>file:/C:/Users/Hamza/OneDrive/Desktop/Design%20Pattern/DP/LAB%203/Decorator/src/decorator/filedecorators/DataSourceDecorator.java</file>
+            <file>file:/C:/Users/Hamza/OneDrive/Desktop/Design%20Pattern/DP/LAB%203/Decorator/src/decorator/pattern/DecoratorPatternDemo.java</file>
+            <file>file:/C:/Users/Hamza/OneDrive/Desktop/Design%20Pattern/DP/LAB%203/Decorator/src/decorator/pattern/Circle.java</file>
+            <file>file:/C:/Users/Hamza/OneDrive/Desktop/Design%20Pattern/DP/LAB%203/Decorator/src/decorator/filedecorators/Decorator.java</file>
+            <file>file:/C:/Users/Hamza/OneDrive/Desktop/Design%20Pattern/DP/LAB%203/Decorator/src/decorator/pattern/ShapeDecorator.java</file>
+            <file>file:/C:/Users/Hamza/OneDrive/Desktop/Design%20Pattern/DP/LAB%203/Decorator/src/decorator/filedecorators/FileDataSource.java</file>
+        </group>
+    </open-files>
+</project-private>

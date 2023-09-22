@@ -3,17 +3,27 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package decorator.pattern;
+package decorator.simple;
+
 
 public class Rectangle implements Shape {
-
+    private double price;
+    
+    public Rectangle(double price){
+        this.price = price;
+    }
+   
+    @Override
+    public void draw() {
+        double totalCost = computeCost();
+        System.out.println("Shape: Rectangle, Cost: " + totalCost);
+    }
+   
    @Override
-   public void draw() {
-      System.out.println("Shape: Rectangle");
-   }
-   @Override
-   public void price() {
-       int price = 200;
-      System.out.println("RS "+price);
-   }
+    public double getPrice(){
+        return price;
+    }
+    private double computeCost() {
+        return getPrice();
+    }
 }

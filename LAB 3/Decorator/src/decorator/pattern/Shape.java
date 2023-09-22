@@ -3,9 +3,10 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package decorator.pattern;
+package decorator.simple;
 
 public interface Shape {
    void draw();
-   void price();
+   double getPrice();
 }
+
