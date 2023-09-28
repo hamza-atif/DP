@@ -12,9 +12,11 @@ public class Main {
       AbstractLogger errorLogger = new ErrorLogger(AbstractLogger.ERROR);
       AbstractLogger fileLogger = new FileLogger(AbstractLogger.DEBUG);
       AbstractLogger consoleLogger = new ConsoleLogger(AbstractLogger.INFO);
+      AbstractLogger databaseLogger = new DatabaseLogger (AbstractLogger.WARNING);
 
       errorLogger.setNextLogger(fileLogger);
       fileLogger.setNextLogger(consoleLogger);
+      databaseLogger.setNextLogger(databaseLogger);
 
       return errorLogger;	
    }
@@ -30,5 +32,8 @@ public class Main {
 
       loggerChain.logMessage(AbstractLogger.ERROR, 
          "This is an error information.");
+      loggerChain.logMessage(AbstractLogger.WARNING,
+         "This is an Warning Message.");
+      
    }
 }
