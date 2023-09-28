@@ -24,7 +24,7 @@ public class Main {
 
       AbstractLogger errorLogger2 = new ErrorLogger(AbstractLogger.ERROR);
       AbstractLogger consoleLogger2 = new FileLogger(AbstractLogger.INFO);
-      AbstractLogger databaseLogger2 = new DatabaseLogger (AbstractLogger.WARNING);
+      AbstractLogger databaseLogger2 = new DatabaseLogger (AbstractLogger.WARNING); 
 
       errorLogger2.setNextLogger(consoleLogger2);
       consoleLogger2.setNextLogger(databaseLogger2);
@@ -50,12 +50,11 @@ public class Main {
       
 
 
-      loggerChain2.logMessage(AbstractLogger.INFO, 
+      loggerChain2.logOnceMessage(AbstractLogger.INFO, 
          "This is an Information.");
-
-      loggerChain2.logMessage(AbstractLogger.ERROR, 
+      loggerChain2.logOnceMessage(AbstractLogger.ERROR, 
          "This is an error information.");
-      loggerChain2.logMessage(AbstractLogger.WARNING,
+      loggerChain2.logOnceMessage(AbstractLogger.WARNING,
          "This is an Warning Message.");
       
       
