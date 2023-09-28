@@ -20,9 +20,22 @@ public class Main {
 
       return errorLogger;	
    }
+   private static AbstractLogger getChainOfLoggers2(){
+
+      AbstractLogger errorLogger2 = new ErrorLogger(AbstractLogger.ERROR);
+      AbstractLogger consoleLogger2 = new FileLogger(AbstractLogger.INFO);
+      AbstractLogger databaseLogger2 = new DatabaseLogger (AbstractLogger.WARNING);
+
+      errorLogger2.setNextLogger(consoleLogger2);
+      consoleLogger2.setNextLogger(databaseLogger2);
+
+
+      return errorLogger2;	
+   }
 
    public static void main(String[] args) {
       AbstractLogger loggerChain = getChainOfLoggers();
+      AbstractLogger loggerChain2 = getChainOfLoggers2();
 
       loggerChain.logMessage(AbstractLogger.INFO, 
          "This is an information.");
@@ -34,6 +47,18 @@ public class Main {
          "This is an error information.");
       loggerChain.logMessage(AbstractLogger.WARNING,
          "This is an Warning Message.");
+      
+
+
+      loggerChain2.logMessage(AbstractLogger.INFO, 
+         "This is an Information.");
+
+      loggerChain2.logMessage(AbstractLogger.ERROR, 
+         "This is an error information.");
+      loggerChain2.logMessage(AbstractLogger.WARNING,
+         "This is an Warning Message.");
+      
+      
       
    }
 }
