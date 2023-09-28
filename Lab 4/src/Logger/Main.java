@@ -15,8 +15,8 @@ public class Main {
       AbstractLogger databaseLogger = new DatabaseLogger (AbstractLogger.WARNING);
 
       errorLogger.setNextLogger(fileLogger);
-      fileLogger.setNextLogger(consoleLogger);
-      databaseLogger.setNextLogger(databaseLogger);
+      fileLogger.setNextLogger(databaseLogger);
+      databaseLogger.setNextLogger(consoleLogger);
 
       return errorLogger;	
    }
