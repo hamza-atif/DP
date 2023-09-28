@@ -56,7 +56,8 @@ public class Main {
          "This is an error information.");
       loggerChain2.logOnceMessage(AbstractLogger.WARNING,
          "This is an Warning Message.");
-      
+      loggerChain2.logOnceMessage(AbstractLogger.DEBUG, 
+         "This is an debug level information.");
       
       
    }

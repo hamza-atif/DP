@@ -34,7 +34,7 @@ public abstract class AbstractLogger {
          write(message);
       }
       else if(nextLogger !=null){
-         nextLogger.logMessage(level, message);
+         nextLogger.logOnceMessage(level, message);
       }
       else 
           System.out.println("Support not Available");
